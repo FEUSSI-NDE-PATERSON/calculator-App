@@ -1,0 +1,39 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    overflow-x: hidden;
+}
+/* theme 1 */
+.body {
+    background-color: #eae3dc !important;
+}
+.input{
+    background-color: #fff !important;
+    color:#182034 !important;
+}
+.title *{
+    color:black !important;
+    font-weight: bold !important;
+}
+.sliderMiddle{
+    justify-content: end !important;
+    background-color: #b4a597 !important;
+}
+
+.calBody{
+    background-color:#b4a597 !important;
+}
+.calBodyButtons{
+    color:black !important;
+    box-shadow:2px 3px 7px gray !important;
+}
+.reset,.del{
+    background-color: rgb(16, 168, 130) !important;
+    color:white !important;
+}
+.equal,.slide{
+    background-color:#d03f2f !important;
+    color:white !important;
+}

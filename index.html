@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-app-main</title>
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-[#3a4764] flex items-center justify-center h-screen">
+    <div class="flex flex-col w-[85vw] sm:w-[30vw] shadow shadow-2xl shadow-[gray] p-2 ">
+        <div class="flex justify-between my-3" id="title" 
+       >
+           <p class="text-white font-bold">Calc</p>
+           <div class="flex text-white items-end"  >
+             <p class="mr-3 sm:mr-5">Theme</p>
+             <div>
+                <div class="flex text-white justify-between ">
+                    <p>1</p>
+                    <p>2</p>
+                </div>
+                 <div class="bg-[#232c43] h-[20px] w-[50px] rounded-full flex items-center justify-start" id="slide">
+                    <p class="w-[12px] bg-red-400 h-[12px] ml-1  rounded-full" ></p>
+                 </div>
+             </div>
+             
+           </div>
+        </div>
+         <input type="text" class="px-2 text-3xl py-2 text-white text-right font-bold rounded bg-[#232c43]" value="" id="value" />
+        <div class="grid grid-cols-4 gap-4   bg-[#182034] p-5  mt-2" id="card">
+            <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('7')">7</button>
+            <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('8')">8</button>
+            <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('9')">9</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#637097]"  id="del">DEL</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('4')">4</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('5')">5</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('6')">6</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('+')">+</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('1')">1</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('2')">2</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('3')">3</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('-')">-</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('.')">.</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('0')">0</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('/')">/</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="add('*')">*</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="mathFormulaePow('2')">^2</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="mathFormulaePow('3')">^3</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="mathFormulae('sqrt')">sqrt</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="mathFormulae('cbrt')">Cbrt</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="mathFormulae('cos')">cos</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="mathFormulae('sin')">sin</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="mathFormulae('cosh')">cosh</button>
+           <button class="text-[#182034] font-bold rounded  px-2 py-1 bg-[#eae3dc]" onclick="mathFormulae('tanh')">tan</button>
+           <button class="col-span-2 bg-[#d03f2f] text-white font-bold rounded px-2 py-1" id="reset" >RESET</button>
+           <button class="col-span-2 bg-[#637097] text-white font-bold rounded " id="valuing">=</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
